@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.Api\\BankOfDotNet.Api.csproj": {}
+    "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.IdentityServer\\BankOfDotNet.IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.Api\\BankOfDotNet.Api.csproj": {
+    "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.IdentityServer\\BankOfDotNet.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.Api\\BankOfDotNet.Api.csproj",
-        "projectName": "BankOfDotNet.Api",
-        "projectPath": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.Api\\BankOfDotNet.Api.csproj",
+        "projectUniqueName": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.IdentityServer\\BankOfDotNet.IdentityServer.csproj",
+        "projectName": "BankOfDotNet.IdentityServer",
+        "projectPath": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.IdentityServer\\BankOfDotNet.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\dougl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.Api\\obj\\",
+        "outputPath": "C:\\Users\\dougl\\source\\repos\\IdentityServer\\BankOfDotNet\\BankOfDotNet.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,10 +56,6 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[2.1.9, )"
             }
           },
           "imports": [

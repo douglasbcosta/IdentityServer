@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "bfce3534-3e81-4be6-b037-71949aa4e2bc",
+		"name": "BankingApplication",
+		"description": "BankOfDotNet Web API\n\nEndPoints:\n\nGetAllCustomers : api/Customers\nGetSpecificCustomer : api/Customers/5\nUpdateCustomer : api/Customers/5 PUT CustomerObject\nCreateCustomer : api/Customers POST CustomerObject\nDeleteCustomer : api/Customers/5 DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8035/api/customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8035/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8035",
+					"path": [
+						"api",
+						"customers"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8035/api/customers/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8035/api/customers/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8035",
+					"path": [
+						"api",
+						"customers",
+						"3"
+					]
+				},
+				"description": "Get Specific Customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8035/api/customers/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 1,\n\t\"FirstName\":\"Douglas\",\n\t\"LastName\":\"Costa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8035/api/customers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8035",
+					"path": [
+						"api",
+						"customers",
+						""
+					]
+				},
+				"description": "Create Customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8035/api/customers/ Copy",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\": 1,\n\t\"FirstName\":\"Teste\",\n\t\"LastName\":\"Costa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8035/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8035",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				},
+				"description": "Update Customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8035/api/customers/ Copy Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8035/api/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8035",
+					"path": [
+						"api",
+						"customers",
+						"1"
+					]
+				},
+				"description": "Delete Customer"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2b5da0fe-10cb-48be-a6d1-8857bc099207",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ef517575-8120-430c-a4eb-8a1866fe3b31",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

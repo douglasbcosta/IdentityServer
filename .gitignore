@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/BankOfDotNet/v16/Server/sqlite3
+/.vs/BankOfDotNet/v16
+/.vs/BankOfDotNet
+/BankOfDotNet.Api/bin/Debug/netcoreapp2.1
+/BankOfDotNet.Api/obj/Debug/netcoreapp2.1
+/BankOfDotNet.Api/obj
