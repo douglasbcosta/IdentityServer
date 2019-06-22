@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankOfDotNet.Api", "BankOfDotNet.Api\BankOfDotNet.Api.csproj", "{B9344858-1817-4FB9-B558-D27BB38E6D5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9344858-1817-4FB9-B558-D27BB38E6D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9344858-1817-4FB9-B558-D27BB38E6D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9344858-1817-4FB9-B558-D27BB38E6D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9344858-1817-4FB9-B558-D27BB38E6D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A40B4416-AECF-4946-8FA3-C0760333E569}
+	EndGlobalSection
+EndGlobal
