@@ -12,3 +12,17 @@ C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.IdentitySer
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.RazorTargetAssemblyInfo.cache
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.dll
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.pdb
+C:\IdentityServer\BankOfDotNet.IdentityServer\bin\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.deps.json
+C:\IdentityServer\BankOfDotNet.IdentityServer\bin\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.runtimeconfig.json
+C:\IdentityServer\BankOfDotNet.IdentityServer\bin\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.runtimeconfig.dev.json
+C:\IdentityServer\BankOfDotNet.IdentityServer\bin\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.dll
+C:\IdentityServer\BankOfDotNet.IdentityServer\bin\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.pdb
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.csprojAssemblyReference.cache
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.csproj.CoreCompileInputs.cache
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.RazorAssemblyInfo.cache
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.RazorAssemblyInfo.cs
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.AssemblyInfoInputs.cache
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.AssemblyInfo.cs
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.RazorTargetAssemblyInfo.cache
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.dll
+C:\IdentityServer\BankOfDotNet.IdentityServer\obj\Debug\netcoreapp2.1\BankOfDotNet.IdentityServer.pdb

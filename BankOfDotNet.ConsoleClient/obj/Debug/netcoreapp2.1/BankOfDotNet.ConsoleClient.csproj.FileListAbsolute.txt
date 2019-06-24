@@ -9,3 +9,14 @@ C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.ConsoleClie
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.csprojAssemblyReference.cache
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.dll
 C:\Users\dougl\source\repos\IdentityServer\BankOfDotNet\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.pdb
+C:\IdentityServer\BankOfDotNet.ConsoleClient\bin\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.deps.json
+C:\IdentityServer\BankOfDotNet.ConsoleClient\bin\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.runtimeconfig.json
+C:\IdentityServer\BankOfDotNet.ConsoleClient\bin\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.runtimeconfig.dev.json
+C:\IdentityServer\BankOfDotNet.ConsoleClient\bin\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.dll
+C:\IdentityServer\BankOfDotNet.ConsoleClient\bin\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.pdb
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.csprojAssemblyReference.cache
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.csproj.CoreCompileInputs.cache
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.AssemblyInfoInputs.cache
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.AssemblyInfo.cs
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.dll
+C:\IdentityServer\BankOfDotNet.ConsoleClient\obj\Debug\netcoreapp2.1\BankOfDotNet.ConsoleClient.pdb
