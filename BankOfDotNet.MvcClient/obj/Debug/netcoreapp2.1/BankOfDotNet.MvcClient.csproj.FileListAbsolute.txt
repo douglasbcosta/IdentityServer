@@ -30,3 +30,4 @@ C:\IdentityServer\BankOfDotNet.MvcClient\obj\Debug\netcoreapp2.1\BankOfDotNet.Mv
 C:\IdentityServer\BankOfDotNet.MvcClient\obj\Debug\netcoreapp2.1\BankOfDotNet.MvcClient.dll
 C:\IdentityServer\BankOfDotNet.MvcClient\obj\Debug\netcoreapp2.1\BankOfDotNet.MvcClient.pdb
 C:\IdentityServer\BankOfDotNet.MvcClient\obj\Debug\netcoreapp2.1\BankOfDotNet.MvcClient.csproj.CopyComplete
+C:\IdentityServer\BankOfDotNet.MvcClient\obj\Debug\netcoreapp2.1\Razor\Views\Home\Secure.g.cshtml.cs

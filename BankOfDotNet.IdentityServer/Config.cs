@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
 
@@ -9,6 +10,14 @@ namespace BankOfDotNet.IdentityServer
 {
     public class Config
     {
+        public static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>
+            {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile()
+            };
+        }
         public static List<TestUser> GetUsers()
         {
             return new List<TestUser>
@@ -58,6 +67,29 @@ namespace BankOfDotNet.IdentityServer
                         new Secret("secret".Sha256())
                     },
                     AllowedScopes = { "bankOfDotNetApi" } 
+                },
+                new Client
+                {
+                    ClientId = "mvc",
+                    ClientName = "MVC Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = { "http://localhost:5003/signin-oidc"},
+                    PostLogoutRedirectUris = {"http://localhost:5003/signout-callback-oidc"},
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile 
+                    }
+                },
+                new Client
+                {
+                    ClientId = "swaggerapiui",
+                    ClientName = "Swagger API UI",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    RedirectUris = { "http://localhost:8035/swagger/oauth-redirect.html"},
+                    PostLogoutRedirectUris = {"http://localhost:8035/swagger"},
+                    AllowedScopes =  {"bankOfDotNetApi"},
+                    AllowAccessTokensViaBrowser = true
                 }
             };
         }
