@@ -34,10 +34,11 @@ namespace BankOfDotNet.IdentityServer
 
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
-                /*.AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddInMemoryApiResources(Config.GetAllApiResources())
-                .AddInMemoryClients(Config.GetClients())*/
-                .AddTestUsers(Config.GetUsers())
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                /*.AddInMemoryApiResources(Config.GetAllApiResources())
+                .AddInMemoryClients(Config.GetClients())
+                .AddTestUsers(Config.GetUsers())*/
+                
                 .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = b =>

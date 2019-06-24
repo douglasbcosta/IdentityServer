@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BankOfDotNet.Api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace BankOfDotNet.Api
 {
@@ -34,13 +36,24 @@ namespace BankOfDotNet.Api
                     options.ApiName = "bankOfDotNetApi";
                 });
 
-            services.AddDbContext<BankContext>(opts => 
+            services.AddDbContext<BankContext>(opts =>
                 opts.UseInMemoryDatabase("BankingDb"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddSwaggerGen(options => {
                 options.SwaggerDoc("v1", new Info { Title = "BankOdDotNet API", Version = "v1" });
+                options.OperationFilter<CheckAuthorizeOperationFilter>();
+                options.AddSecurityDefinition("oauth2", new OAuth2Scheme {
+                    Type = "oauth2",
+                    Flow = "implicit",
+                    AuthorizationUrl = "http://localhost:5000/connect/authorize",
+                    TokenUrl = "http://localhost:5000/connect/token",
+                    Scopes = new Dictionary<string, string>
+                    {
+                        {"bankOfDotNet", "Customer API for BankOfDotNet" }
+                    }
+                });
             });
         }
 
@@ -57,7 +70,28 @@ namespace BankOfDotNet.Api
             app.UseSwagger();
             app.UseSwaggerUI(options => {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "BankOdDotNet API V1");
+                options.OAuthClientId("swaggerapiui");
+                options.OAuthAppName("Swagger API UI");
             });
+        }
+    }
+
+    internal class CheckAuthorizeOperationFilter : IOperationFilter
+    {
+        public void Apply(Operation operation, OperationFilterContext context)
+        {
+            var authorizeAttributeExists = context.ApiDescription.ControllerAttributes().OfType<AuthorizeAttribute>().Any() || 
+                context.ApiDescription.ActionAttributes().OfType<AuthorizeAttribute>().Any();
+
+            if (authorizeAttributeExists)
+            {
+                operation.Responses.Add("401", new Response { Description = "Unauthorized" });
+                operation.Responses.Add("403", new Response { Description = "Forbidden" });
+                operation.Security = new List<IDictionary<string, IEnumerable<string>>>();
+                operation.Security.Add(new Dictionary<string, IEnumerable<string>> {
+                    {"oauth", new [] {"bankOfDotNetApi"}}
+                });
+            }
         }
     }
 }
